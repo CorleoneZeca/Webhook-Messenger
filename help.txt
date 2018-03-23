@@ -8,7 +8,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 
 
 //to test if the webhook is active
-curl -X GET "https://b548b3d3.ngrok.io/webhook?hub.verify_token=<verifytoken>&hub.challenge=CHALLENGE_ACCEPTED&hub.mode=subscribe"
+curl -X GET "https://b548b3d3.ngrok.io/webhook?hub.verify_token=<VerifyToken>&hub.challenge=CHALLENGE_ACCEPTED&hub.mode=subscribe"
 
 //webhook tutorial
 https://blog.messengerdevelopers.com/using-the-webview-to-create-richer-bot-to-user-interactions-ed8a789523c6
