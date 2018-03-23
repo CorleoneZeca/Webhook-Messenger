@@ -1,0 +1,14 @@
+
+//to register the webhook domain
+curl -X POST -H "Content-Type: application/json" -d '{
+  "whitelisted_domains":[
+    "https://b548b3d3.ngrok.io"
+  ]
+}' "https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAAIPKKiiGZAMBAE7nWRvoc4TaK1Qx0nYLN8H2BBjn8gAtZCpF4n0BTHh1vmrBaZCrq0tnL7TnBbfs8Bz0By9iR5plLC1ERzS94R3j5himT7nzsRF1LiZBXXmwpaBtnVw2ptw2LhHDCLdZBaRHkoVZAmNtV7pdlNr3E93wRrueR5QZDZD"
+
+
+//to test if the webhook is active
+curl -X GET "https://b548b3d3.ngrok.io/webhook?hub.verify_token=PYyrMO0TpHEWU6guqVDkzs6gNoDQFRMH&hub.challenge=CHALLENGE_ACCEPTED&hub.mode=subscribe"
+
+//webhook tutorial
+https://blog.messengerdevelopers.com/using-the-webview-to-create-richer-bot-to-user-interactions-ed8a789523c6
